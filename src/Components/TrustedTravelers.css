@@ -1,0 +1,120 @@
+
+.trusted-section {
+    background: #f7faff;
+    padding: 70px 0;
+  }
+  
+  .trusted-subtitle {
+    color: #098df7;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  .trusted-heading span {
+    color: #0a746e;
+  }
+  
+  .trusted-description {
+    max-width: 650px;
+    color: #6c757d;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  
+  .trusted-card {
+    background: #ffffff;
+    padding: 30px 18px;
+    border-radius: 14px;
+    border: 1px solid #e8eff8;
+    box-shadow: 0 5px 20px rgba(13, 56, 151, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .trusted-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(13, 56, 151, 0.12);
+    border-color: #098df7;
+  }
+  
+  .trusted-icon {
+    width: 60px;
+    height: 60px;
+    background: #e8f3ff;
+    color: #098df7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    margin: 0 auto 18px;
+  }
+  
+  .trusted-number {
+    color: #0d3897;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  
+  .trusted-title {
+    color: #172b4d;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .trusted-text {
+    color: #7a8493;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  
+  /* Tablet */
+  @media (max-width: 991px) {
+    .trusted-heading {
+      font-size: 30px;
+    }
+  
+    .trusted-card {
+      padding: 25px 12px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 576px) {
+    .trusted-section {
+      padding: 45px 0;
+    }
+  
+    .trusted-heading {
+      font-size: 26px;
+    }
+  
+    .trusted-description {
+      font-size: 13px;
+    }
+  
+    .trusted-card {
+      padding: 22px 10px;
+    }
+  
+    .trusted-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 23px;
+    }
+  
+    .trusted-number {
+      font-size: 26px;
+    }
+  
+    .trusted-title {
+      font-size: 14px;
+    }
+  
+    .trusted-text {
+      font-size: 11px;
+    }
+  }
+  

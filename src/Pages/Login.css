@@ -1,0 +1,420 @@
+
+.hotel-login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    font-family: inherit;
+    color: #193451;
+    background: #f5f8fc;
+  }
+  
+  /* Left visual section */
+  .login-visual {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 650px;
+    padding: 45px 7%;
+    overflow: hidden;
+    color: white;
+    background:
+      linear-gradient(
+        135deg,
+        rgba(13, 39, 75, 0.94),
+        rgba(24, 66, 105, 0.72) 50%,
+        rgba(20, 44, 70, 0.38)
+      ),
+      url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1400&q=85")
+      center / cover no-repeat;
+  }
+  
+  .hotel-brand {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 13px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .brand-icon {
+    font-size: 38px;
+  }
+  
+  .hotel-brand strong,
+  .hotel-brand small {
+    display: block;
+  }
+  
+  .hotel-brand strong {
+    font-size: 23px;
+    letter-spacing: 0.3px;
+  }
+  
+  .hotel-brand small {
+    margin-top: 4px;
+    color: #d8e4f2;
+    font-size: 12px;
+  }
+  
+  .visual-content {
+    max-width: 560px;
+    margin: 45px 0;
+  }
+  
+  .visual-label {
+    color: #f3cf8b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  .visual-content h1 {
+    margin: 20px 0;
+    font-size: clamp(38px, 4vw, 57px);
+    line-height: 1.15;
+    letter-spacing: -1.8px;
+    font-weight: 750;
+  }
+  
+  .visual-content h1 span {
+    color: #f3cf8b;
+  }
+  
+  .visual-content > p {
+    max-width: 430px;
+    color: #e1e9f2;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+  
+  .hotel-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 32px;
+  }
+  
+  .hotel-benefits span {
+    color: white;
+    font-size: 11px;
+  }
+  
+  .visual-footer {
+    color: #d8e4f2;
+    font-size: 12px;
+  }
+  
+  /* Right login section */
+  .login-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 6%;
+    background: #f5f8fc;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 38px 36px;
+    border: 1px solid #e8edf4;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(23, 59, 112, 0.08);
+  }
+  
+  .login-logo {
+    display: grid;
+    place-items: center;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 15px;
+    border-radius: 14px;
+    background: #edf4ff;
+    color: #1760c5;
+    font-size: 29px;
+  }
+  
+  .login-card h2 {
+    margin: 0;
+    color: #142b49;
+    text-align: center;
+    font-size: 29px;
+    letter-spacing: -0.7px;
+  }
+  
+  .login-subtitle {
+    margin: 12px auto 28px;
+    color: #7b8ba2;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  
+  .login-field {
+    margin-bottom: 20px;
+  }
+  
+  .login-field > label {
+    display: block;
+    margin-bottom: 9px;
+    color: #425873;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  .login-input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 51px;
+    padding: 0 14px;
+    border: 1px solid #dbe3ee;
+    border-radius: 8px;
+    color: #7186a2;
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .login-input:focus-within {
+    border-color: #2871d2;
+    box-shadow: 0 0 0 3px rgba(40, 113, 210, 0.09);
+  }
+  
+  .login-input > svg {
+    flex-shrink: 0;
+    font-size: 17px;
+  }
+  
+  .login-input input {
+    width: 100%;
+    min-width: 0;
+    padding: 14px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #193451;
+    font-family: inherit;
+    font-size: 13px;
+  }
+  
+  .login-input input::placeholder {
+    color: #a1adbd;
+  }
+  
+  .password-toggle {
+    display: grid;
+    place-items: center;
+    padding: 4px;
+    border: none;
+    background: transparent;
+    color: #7186a2;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  
+  .login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 4px 0 25px;
+    font-size: 12px;
+  }
+  
+  .remember-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #61748d;
+    cursor: pointer;
+  }
+  
+  .remember-option input {
+    width: 15px;
+    height: 15px;
+    accent-color: #1760c5;
+    cursor: pointer;
+  }
+  
+  .login-options a,
+  .signup-text a {
+    color: #1760c5;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .login-options a:hover,
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 52px;
+    border: none;
+    border-radius: 8px;
+    background: #0a746e;
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .login-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(23, 96, 197, 0.2);
+  }
+  
+  .login-button span {
+    font-size: 21px;
+  }
+  
+  .login-divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 25px 0;
+  }
+  
+  .login-divider span {
+    flex: 1;
+    height: 1px;
+    background: #e2e8f0;
+  }
+  
+  .login-divider small {
+    color: #93a1b4;
+    font-size: 11px;
+  }
+  
+  .google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 49px;
+    border: 1px solid #dbe3ee;
+    border-radius: 8px;
+    background: white;
+    color: #425873;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .google-login:hover {
+    background: #f8faff;
+  }
+  
+  .google-login strong {
+    color: #4285f4;
+    font-size: 21px;
+    font-weight: 800;
+  }
+  
+  .signup-text {
+    margin: 25px 0 0;
+    color: #7b8ba2;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 950px) {
+    .hotel-login {
+      grid-template-columns: 0.85fr 1.15fr;
+    }
+  
+    .login-visual {
+      padding: 35px 7%;
+    }
+  
+    .visual-content h1 {
+      font-size: 39px;
+    }
+  
+    .login-panel {
+      padding: 30px 5%;
+    }
+  
+    .login-card {
+      padding: 30px 24px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .hotel-login {
+      grid-template-columns: 1fr;
+    }
+  
+    .login-visual {
+      min-height: auto;
+      padding: 25px 24px 30px;
+      background-position: center;
+    }
+  
+    .hotel-brand strong {
+      font-size: 20px;
+    }
+  
+    .visual-content {
+      margin: 42px 0 28px;
+    }
+  
+    .visual-content h1 {
+      font-size: 38px;
+    }
+  
+    .visual-content > p {
+      font-size: 13px;
+    }
+  
+    .hotel-benefits {
+      gap: 12px;
+    }
+  
+    .hotel-benefits span {
+      font-size: 10px;
+    }
+  
+    .visual-footer {
+      display: none;
+    }
+  
+    .login-panel {
+      padding: 30px 18px 40px;
+    }
+  
+    .login-card {
+      max-width: 480px;
+      padding: 30px 22px;
+    }
+  }
+  
+  @media (max-width: 380px) {
+    .login-card {
+      padding: 26px 16px;
+    }
+  
+    .login-options {
+      font-size: 11px;
+    }
+  
+    .visual-content h1 {
+      font-size: 33px;
+    }
+  }
+  

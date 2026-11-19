@@ -1,0 +1,159 @@
+
+  .min-vh-75 {
+    min-height: 500px;
+  }
+
+  .hero-text {
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 20px 0 30px;
+  }
+  
+  .career-btn {
+    color: #0a746e;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+ 
+  
+  /* Common Sections */
+
+  .section-heading h4 {
+    color: #0a746e;
+  }
+  
+  .section-heading p {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  /* Benefits */
+  
+  .benefit-card {
+    border: none !important;
+    padding: 15px;
+    border-radius: 12px !important;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .benefit-icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .benefit-card h5 {
+    color: #0a746e;
+  }
+  
+  .benefit-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Jobs */
+  
+  .job-card {
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .job-card h6 {
+    color: #0a746e;
+    margin-bottom: 5px;
+  }
+  
+  .job-department {
+    color: #777;
+  }
+  
+  .job-details {
+    display: flex;
+    gap: 25px;
+    margin: 20px 0;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .apply-btn {
+    background-color: #0a746e;
+    border-radius: 8px;
+    width: auto;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+
+  /* Culture */
+  
+  .culture-section {
+    background: white;
+  }
+  
+  .culture-section h4 {
+    color: #0a746e;;
+    margin-bottom: 20px;
+  }
+  
+  .culture-section p {
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  .culturebox {
+    background: #f5f8ff;
+    padding: 35px;
+    border-radius: 15px;
+  }
+  
+  .culturebox h4 {
+    color: #0a746e;
+    margin-bottom: 20px;
+  }
+  
+  .culturebox li {
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  /* CTA */
+  
+  .career-cta {
+    background: #0a746e;
+  }
+
+  .career-cta .career-btn:hover {
+    background: #f2f2f2 !important;
+  }
+  
+  /* Responsive */
+  
+  @media (max-width: 768px) {
+
+  
+    .hero-text {
+      font-size: 16px;
+    }
+  
+    .section-heading h2,
+    .culture-section h2,
+    .career-cta h2 {
+      font-size: 30px;
+    }
+  
+    .job-details {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
